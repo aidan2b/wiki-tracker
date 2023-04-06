@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Wikipedia Link Tracker",
+  "version": "1.0",
+  "description": "Tracks links followed in Wikipedia and stores the visited pages",
+  "permissions": ["storage", "tabs", "https://*.wikipedia.org/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://*.wikipedia.org/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "48": "icon.png"
+  }
+}

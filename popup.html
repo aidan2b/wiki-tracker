@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: Cambria, serif; /* Updated font-family */
+      font-size: 14px;
+      margin: 16px;
+      width: 300px;
+      background-color: #f5f5f5; /* Soft gray background */
+      border: 1px solid #d3d3d3; /* Neat border */
+      border-radius: 8px; /* Rounded corners */
+      padding: 16px; /* Padding inside the border */
+    }
+    #searchBar, #categoryInput, #clearHistory {
+      font-family: Cambria, serif;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 8px;
+      display: flex;
+      flex-direction: column;
+      background-color: #ffffff; /* White background for list items */
+      border: 1px solid #d3d3d3; /* Border for list items */
+      border-radius: 4px; /* Rounded corners for list items */
+      padding: 8px; /* Padding inside list items */
+    }
+    a {
+      color: #0645ad;
+      text-decoration: none;
+    }
+    .category-label {
+      color: #888;
+      font-size: 12px;
+      margin-left: 8px;
+    }
+    .link-info-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    .link-container {
+      display: flex;
+      align-items: center;
+    }
+    .icon-container {
+      display: flex;
+      align-items: center;
+    }
+    .tag-icon,
+    .trash-icon {
+      margin-left: 5px;
+      cursor: pointer;
+    }
+    .summary {
+      margin-top: 8px;
+      padding: 8px;
+      background-color: #f8f8f8;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      width: 93.5%;
+    }
+    .header-container,
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  </style>
+  <title>Wikipedia Link Tracker</title>
+</head>
+<body>
+  <div class="header-container">
+    <h3>Visited Wikipedia Pages</h3>
+    <div class="icon-container">
+      <a href="https://github.com/aidan2b" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://ko-fi.com/aidan2b" target="_blank">
+        <i class="fas fa-coffee"></i>
+      </a>
+    </div>
+  </div>
+  <input type="text" id="searchBar" placeholder="Search articles...">
+  <input type="text" id="categoryInput" placeholder="Search categories...">
+  <ul id="visitedLinks"></ul>
+  <div class="footer-container">
+    <button id="clearHistory">Clear History</button>
+    <div class="icon-container">
+      <button id="copySummaries" title="Copy Summaries">
+        <i class="fas fa-copy"></i>
+      </button>
+      <button id="exportHistory" title="Export">
+        <i class="fas fa-download"></i>
+      </button>
+      <button id="importHistory" title="Import">
+        <i class="fas fa-upload"></i>
+      </button>
+    </div>
+  </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
