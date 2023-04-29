@@ -16,3 +16,5 @@ Key Features:
 - History Management: The extension provides options to clear the entire history of visited pages, as well as to export and import the history as a JSON file.
 
 Wikipedia Link Tracker is a handy tool for Wikipedia enthusiasts, researchers, and anyone who frequently browses Wikipedia and wants to keep track of the pages they've explored.
+
+![Preview](https://github.com/aidan2b/adr-detection/blob/main/image.jpg?raw=true)
